@@ -1,0 +1,21 @@
+{
+  "name": "nocturne-atlas",
+  "version": "0.1.0",
+  "description": "Nocturne Atlas — Offline-first personal sleep-tracking Progressive Web App",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node scripts/dev-server.js",
+    "test": "node scripts/verify.js",
+    "generate-icons": "node scripts/generate-icons.js"
+  },
+  "keywords": [
+    "pwa",
+    "sleep-tracker",
+    "offline-first",
+    "indexeddb",
+    "vanilla-js"
+  ],
+  "author": "Pratik",
+  "license": "MIT"
+}

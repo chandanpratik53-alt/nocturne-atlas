@@ -1,0 +1,123 @@
+/* css/variables.css */
+/* Nocturne Atlas Design System Tokens */
+
+:root {
+  /* Brand Palette Primary Tokens */
+  --color-ink-plum: #171629;
+  --color-moon-paper: #F3EFE7;
+  --color-tidal-mint: #8ADBD0;
+  --color-orbit-lilac: #AAA0FF;
+  --color-afterglow: #FF947F;
+
+  /* Typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  /* Type Scale */
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 1.875rem;   /* 30px */
+
+  /* Spacing */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Layout dimensions */
+  --bottom-nav-height: 64px;
+  --top-header-height: 58px;
+  --sidebar-width: 260px;
+  --content-max-width: 1020px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 220ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ----------------------------------------------------
+   DARK THEME (Default)
+   Surfaces: Ink Plum with restrained Mint and Lilac
+   ---------------------------------------------------- */
+:root,
+[data-theme="dark"] {
+  --bg-app: #121122;
+  --bg-surface: #171629;
+  --bg-surface-elevated: #211F38;
+  --bg-surface-subtle: #2A2846;
+  --bg-surface-hover: #322F52;
+
+  --border-subtle: rgba(170, 160, 255, 0.12);
+  --border-prominent: rgba(138, 219, 208, 0.28);
+  --border-hover: rgba(138, 219, 208, 0.45);
+
+  --text-primary: #F4F2FA;
+  --text-secondary: #C3BFD6;
+  --text-muted: #9E9AB3;
+
+  --accent-primary: #8ADBD0;       /* Tidal Mint */
+  --accent-primary-text: #102623;
+  --accent-secondary: #AAA0FF;     /* Orbit Lilac */
+  --accent-secondary-text: #191638;
+  --accent-highlight: #FF947F;     /* Afterglow */
+
+  --focus-ring: #8ADBD0;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 10px 28px rgba(0, 0, 0, 0.6);
+
+  --modal-backdrop: rgba(10, 9, 18, 0.78);
+  --danger-surface: #381A1A;
+  --danger-border: #FF7B7B;
+  --danger-text: #FFA5A5;
+}
+
+/* ----------------------------------------------------
+   LIGHT THEME
+   Surfaces: Moon Paper with dark, readable typography
+   ---------------------------------------------------- */
+[data-theme="light"] {
+  --bg-app: #EAE5DC;
+  --bg-surface: #F3EFE7;           /* Moon Paper */
+  --bg-surface-elevated: #FFFFFF;
+  --bg-surface-subtle: #E6E1D7;
+  --bg-surface-hover: #DDD7CB;
+
+  --border-subtle: rgba(23, 22, 41, 0.18);
+  --border-prominent: rgba(23, 22, 41, 0.28);
+  --border-hover: rgba(23, 22, 41, 0.45);
+
+  --text-primary: #171629;          /* Ink Plum text */
+  --text-secondary: #484461;
+  --text-muted: #58546C;
+
+  --accent-primary: #1C7B71;       /* Adjusted accessible deep mint */
+  --accent-primary-text: #FFFFFF;
+  --accent-secondary: #4F44A8;     /* Adjusted accessible lilac */
+  --accent-secondary-text: #FFFFFF;
+  --accent-highlight: #C2422A;     /* Adjusted afterglow */
+
+  --focus-ring: #1C7B71;
+  --shadow-sm: 0 1px 3px rgba(23, 22, 41, 0.08);
+  --shadow-md: 0 4px 12px rgba(23, 22, 41, 0.1);
+  --shadow-lg: 0 10px 26px rgba(23, 22, 41, 0.14);
+
+  --modal-backdrop: rgba(23, 22, 41, 0.55);
+  --danger-surface: #FBECEB;
+  --danger-border: #D32F2F;
+  --danger-text: #B71C1C;
+}
